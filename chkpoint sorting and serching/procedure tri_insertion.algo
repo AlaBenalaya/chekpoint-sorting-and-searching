@@ -1,0 +1,15 @@
+
+Procedure Tri_Insertion(var Tab:tableau );
+var i , j , n, v :Number
+début
+Pour (i de 2 jusquà n faire)
+        v := Tab[i] ;  
+    j :=i ;        
+     Tant que (Tab[j-1] > v) Faire
+    Tab[j] :=Tab[j-1]; 
+    j := j-1;                 
+Fin Tant que 
+
+     Tab[j] := v ;
+Fin Pour
+Fin Tri_Insertion
